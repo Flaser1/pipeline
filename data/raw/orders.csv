@@ -1,0 +1,16 @@
+order_id;customer_id;amount;status
+2001;1;120;paid
+2002;1;45,90; PAID 
+2003;2;80;cancelled
+2004;3;19.99;Paid
+2005;3;200;pending
+2006;4;bad;paid
+2007;4;60;paid
+2008;6;0;paid
+2009;6;35,50;refunded
+2010;7;-10;paid
+2011;99;150;paid
+2012;8;;paid
+2013;9; 75 ;pending
+2014;9;75;paid
+2015;5;30;paid

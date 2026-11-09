@@ -1,0 +1,11 @@
+customer_id;name;country;email
+1; Kasia ;pl;kasia@example.com
+2;Tomek;PL;
+3;Lukas; de ;LUKAS@Example.com
+4;Claire;fr; claire@example.com 
+5;  ;PL;pusty@example.com
+6;Petr;cz;petr@example.com
+7;Ola;;ola@example.com
+abc;Marek;PL;marek@example.com
+8;Sofia; Es;
+9;Igor;pl ;igor@example.com
