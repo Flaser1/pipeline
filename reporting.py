@@ -7,3 +7,6 @@ def print_countries_report(report: dict) -> None:
 def print_statuses_report(report: dict) -> None:
     for status in sorted(report):
         print(status, report[status])
+
+def print_invalid(invalid: list[dict]) -> None:
+    print(invalid)
