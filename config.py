@@ -11,7 +11,7 @@ class PipelineConfig:
     output_dir: Path
 
 
-def load_config(dataset: str):
+def load_config(dataset: str) -> tuple[PipelineConfig, list[str]]:
     base_dir = Path(__file__).resolve().parent
     env_path = base_dir / ".env"
     with env_path.open("r", encoding="utf-8", newline="") as file:
