@@ -7,11 +7,11 @@ from metrics import build_summary_country, build_summary_status
 from reporting import print_countries_report, print_statuses_report
 
 def main():
-    config_customers = load_config_customers()
-    config_orders = load_config_orders()
+    config_customers, expected_columns_customers = load_config_customers()
+    config_orders, expected_columns_orders = load_config_orders()
 
-    customers_raw_csv = run_pipeline_customers(config_customers.input_path, config_customers.output_dir)
-    orders_raw_csv = run_pipeline_orders(config_orders.input_path, config_orders.output_dir)
+    customers_raw_csv = run_pipeline_customers(config_customers.input_path, config_customers.output_dir, expected_columns_customers)
+    orders_raw_csv = run_pipeline_orders(config_orders.input_path, config_orders.output_dir, expected_columns_orders)
 
     clean_customers, invalid_customers = normalize_customers(customers_raw_csv)
     clean_orders, invalid_orders = normalize_orders(orders_raw_csv)
